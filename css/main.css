@@ -1,71 +1,16 @@
-hr {
-    position: absolute;
-    width: 940.6px;
-    height: 0px;
-    left: 250.69px;
-    top: 87.94px;
-
-    border: 1px solid #828282;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-.link-home {
-    position: absolute;
-    top: 0.69%;
-    bottom: 98.82%;
-    font-size: 18px;
-    line-height: 22px;
-    color: #828282;
-    left: 17.44%;
-    right: 79.15%;
-}
-
-.link-about {
-    position: absolute;
-    top: 0.69%;
-    bottom: 98.82%;
-    font-size: 18px;
-    line-height: 22px;
-    color: #828282;
-    left: 31.62%;
-    right: 62.68%;
-}
-
-.link-skill {
-    position: absolute;
-    top: 0.69%;
-    bottom: 98.82%;
-    font-size: 18px;
-    line-height: 22px;
-    color: #828282;
-    left: 48.09%;
-    right: 48.99%;
-}
-
-.link-portfolio {
-    position: absolute;
-    top: 0.69%;
-    bottom: 98.82%;
-    font-size: 18px;
-    line-height: 22px;
-    color: #828282;
-    left: 61.71%;
-    right: 33.29%;
-}
-
-.link-contacts {
-    position: absolute;
-    top: 0.69%;
-    bottom: 98.82%;
-    font-size: 18px;
-    line-height: 22px;
-    color: #828282;
-    left: 77.48%;
-    right: 17.16%;
-}
-
 header {
     border-bottom: 1px solid #828282;
+}
+
+body {
+    margin-left: 250.69px;
+    margin-right: 250.69px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
@@ -73,26 +18,25 @@ a {
     color: #000;
 }
 
-.home>h1 {
-    Width: 123.51px;
-    Height: 118.17px;
-    Top: 128.13px;
-    Left: 251.04px;
-    margin: 5px;
-    font-size: 47.3392px;
-    line-height: 59px;
-    color: #070707;
+.self {
+    padding-top: 40px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
 }
 
-.home>p {
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right:10px;
-    padding-top:10px;
-    margin: 5px;
-    font-size: 18px;
-    line-height: 22px;
-    color: #070707;
+.container-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .about {
@@ -110,3 +54,4 @@ a {
 .contacts {
     text-align: center;
 }
+

@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li><a class="link-home" href="#home">Home</a></li>
             <li><a class="link-about" href="#about">About me</a></li>
             <li><a class="link-skill" href="#skill">Skills</a></li>
@@ -21,11 +21,16 @@
     </header>
     <main>
         <section class="home">
-            <h1 id="home">Denis <br>Novik</h1>
-            <p>
-                UX | UI designer <br>24 years old, minsk
-            </p>
-            <div><img src="../images/foto1.png"/></div>
+            <div class="container-home">
+                <h1 id="home">Denis <br>Novik</h1>
+                <p>
+                    UX | UI designer <br>24 years old, minsk
+                </p>
+                <p class="self">
+                    RU | ENG
+                </p>
+            </div>
+            <img src="../images/foto1.png"/>
         </section>
         <section class="about">
             <h2 id="about">About me</h2>
@@ -47,10 +52,12 @@
             <p>
                 I work in such programs as
             </p>
-            <div><img src="../images/Ps.png"/></div>
-            <div><img src="../images/Ai.png"/></div>
-            <div><img src="../images/Ae.png"/></div>
-            <div><img src="../images/Figma.png"/></div>
+            <div class="container-skill">
+                <img src="../images/Ps.png"/>
+                <img src="../images/Ai.png"/>
+                <img src="../images/Ae.png"/>
+                <img src="../images/Figma.png"/>
+            </div>
         </section>
         <section class="portfolio">
             <h2 id="portfolio">Portfolio</h2>
@@ -69,7 +76,9 @@
                 Want to know more or just chat?<br>
                 You are welcome!
             </p>
-            КНОПКА Send message
+
+            <button class="button">Send message</button>
+            
             <div><img src="../images/inst.png"/></div>
             <p>
                 Like me on<br>
