@@ -1,13 +1,13 @@
-header {
+nav {
     border-bottom: 1px solid #828282;
 }
 
-body {
-    margin-left: 250.69px;
-    margin-right: 250.69px;
+.container{
+    max-width: 941px;
+    margin: auto;
+    text-align: center;
 }
-
-.nav-list {
+.container-nav-list {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -18,52 +18,90 @@ a {
     color: #000;
 }
 
-.self {
-    padding-top: 40px;
+.RU-ENG {
+    margin-top: 40px;
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
 }
+/*
+.section:nth-child(2n) {
+    background: #f6f6f6;
+}
+*/
+.section-home {
+    padding-bottom: 100px;
+}
 
-.container-home {
+.section-about {
+    background: #f6f6f6;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.section-skill {
+    padding-top: 91px;
+    padding-bottom: 110px;
+}
+
+.section-portfolio {
+    background: #f6f6f6;
+    padding-top: 112px;
+    padding-bottom: 96px;
+}
+
+.section-portfolio .h2 {
+    padding-bottom: 47px;
+}
+
+.section-portfolio .h3 {
+    padding-top: 44px;
+    padding-bottom: 90px;
+}
+.section-contacts {
+    padding-top: 115px;
+    padding-bottom: 123px;
+}
+
+.container-home-text {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 94px;
+    margin-bottom: 49px;
 }
 
-.container-skill {
+.container-skill-photo {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 83px;
 }
 
-.about {
-    background: #F6F6F6;
-    text-align: center;
+.section-skill .h2 {
+    padding-bottom: 69px;
 }
 
-.skill {
-    text-align: center;
-}
-
-.portfolio {
-    background: #F6F6F6;
-    text-align: center;
-}
-
-.contacts {
-    text-align: center;
-}
 
 .button {
     background: #000;
     color: #fff;
-    padding: 17px 40px;
+    padding: 15px 42px;
     border-radius: 56%;
-    -webkit-border-radius: 56%;
+    -webkit-border-radius: 50%;
     -moz-border-radius: 56%;
     -ms-border-radius: 56%;
     -o-border-radius: 56%;
+
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.container-images {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
