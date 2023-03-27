@@ -48,17 +48,24 @@ a {
 
 .section-portfolio {
     background: #f6f6f6;
-    padding-top: 112px;
-    padding-bottom: 96px;
+    padding-top: 80px;
+    padding-bottom: 1px;
 }
 
 .section-portfolio .h2 {
-    padding-bottom: 47px;
+    margin-bottom: 47px;
+}
+
+.section-contacts . {
+    font:14px ‘Gilroy-Medium’, Arial, Helvetica, sans-serif;
+    color: #828282;
 }
 
 .section-portfolio .h3 {
-    padding-top: 44px;
-    padding-bottom: 90px;
+    margin-top: 44px;
+    margin-bottom: 90px;
+    font:18px ‘Gilroy-Medium’, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
 }
 .section-contacts {
     padding-top: 115px;
@@ -78,6 +85,28 @@ a {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 83px;
+    padding-left: 42px;
+    padding-right: 55px;
+}
+
+.container-skill-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 23px;
+    padding-left: 42px;
+    padding-right: 55px;
+
+    font:14px ‘Gilroy-Bold’, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #828282;
+}
+
+.container-skill-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
 }
 
 .section-skill .h2 {
@@ -89,27 +118,40 @@ a {
     background: #000;
     color: #fff;
     padding: 15px 42px;
-    border-radius: 56%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 56%;
-    -ms-border-radius: 56%;
-    -o-border-radius: 56%;
-
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
     margin-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 65px;
+    border: 1px solid #070707;
 }
 
 .container-images {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    padding-inline-start: 0px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 p {
-    font-size: 1.5rem;
+    font:18px ‘Gilroy-Medium’, Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: 2rem;
+    font:34px ‘Gilroy-Bold’, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.container-stars {
+    justify-content: space-between;
+    display: flex;
+}
+
+.item {
+    flex: 1 1 auto;
+    margin: 0 6px;
 }
