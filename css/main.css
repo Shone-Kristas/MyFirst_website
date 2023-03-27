@@ -116,6 +116,8 @@ a {
 
 .button {
     background: #000;
+    font:18px ‘Gilroy-Bold’, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
     color: #fff;
     padding: 15px 42px;
     border-radius: 25px;
