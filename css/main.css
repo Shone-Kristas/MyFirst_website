@@ -3,130 +3,151 @@ nav {
 }
 
 .container{
-    max-width: 941px;
+    max-width: 944px;
     margin: auto;
     text-align: center;
 }
 .container-nav-list {
+    padding-left: 0px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    margin-top: 31px;
+    margin-bottom: 36px;
 }
 
 a {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 18px;
     text-decoration: none;
     color: #000;
 }
 
 .RU-ENG {
-    margin-top: 40px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 16px ;
+    width: 83px;
+    padding-top: 63px;
+    margin-top: 26px;
     transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
+    margin-bottom: 0px;
 }
-/*
-.section:nth-child(2n) {
-    background: #f6f6f6;
-}
-*/
+
 .section-home {
     padding-bottom: 100px;
 }
 
 .section-about {
     background: #f6f6f6;
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: 87px;
+    padding-bottom: 93px;
 }
 
 .section-skill {
-    padding-top: 91px;
+    padding-top: 56px;
     padding-bottom: 110px;
+    padding-left: 4px;
 }
 
 .section-portfolio {
     background: #f6f6f6;
     padding-top: 80px;
-    padding-bottom: 1px;
+    padding-bottom: 25px;
+    padding-left: 7px;
 }
 
 .section-portfolio .h2 {
-    margin-bottom: 47px;
+    margin-bottom: 56px;
 }
 
 .section-contacts .p-text {
-    font:14px ‘Gilroy-Medium’, Arial, Helvetica, sans-serif;
+    font-family:'Gilroy-Medium', sans-serif;
+    font-size: 14px;
     color: #828282;
+    padding-top: 24px;
+    padding-left: 8px;
 }
 
 .section-portfolio .h3 {
-    margin-top: 44px;
-    margin-bottom: 90px;
-    font:18px ‘Gilroy-Medium’, Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    margin-top: 38.5px;
+    margin-bottom: 103px;
+    font-family:'Gilroy-Medium', sans-serif;
+    font-size: 18px;
     text-decoration: underline;
 }
 .section-contacts {
-    padding-top: 115px;
+    padding-top: 52px;
     padding-bottom: 123px;
 }
 
 .container-home-text {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 94px;
-    margin-bottom: 49px;
+    align-items: center;
+    padding-bottom: 8px;
 }
 
 .container-skill-photo {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    margin-top: 83px;
+    margin-top: 88px;
     padding-left: 42px;
-    padding-right: 55px;
+    grid-gap: 167px;
+}
+
+.container-skill-text>p {
+    font-family:'Gilroy-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #828282;
+}
+
+p {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px ;
 }
 
 .container-skill-text {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 23px;
-    padding-left: 42px;
-    padding-right: 55px;
-
-    font:14px ‘Gilroy-Bold’, Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    color: #828282;
+    padding-left: 52px;
+    padding-right: 76px;
+    padding-top: 8px;
 }
 
 .container-skill-stars {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 40px;
+    padding-top: 25px;
+    padding-left: 1px;
+    padding-right: 3px;
 }
 
 .section-skill .h2 {
-    padding-bottom: 69px;
+    padding-bottom: 41px;
 }
-
 
 .button {
     background: #000;
-    font:18px ‘Gilroy-Bold’, Arial, Helvetica, sans-serif;
+    font-family:'Gilroy-Bold', sans-serif;
+    font-size: 17.5px;
     font-weight: bolder;
     color: #fff;
-    padding: 15px 42px;
+    padding: 11px 28px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    margin-top: 20px;
-    margin-bottom: 65px;
+    margin-top: 25px;
+    margin-bottom: 67px;
     border: 1px solid #070707;
 }
 
@@ -139,13 +160,16 @@ a {
     padding-right: 300px;
 }
 
-p {
-    font:18px ‘Gilroy-Medium’, Arial, Helvetica, sans-serif;
+h1{
+    font:47px "Gilroy-Bold", sans-serif;
+    font-weight: bolder;
 }
 
 h2 {
-    font:34px ‘Gilroy-Bold’, Arial, Helvetica, sans-serif;
+    font-family:'Gilroy-Bold', sans-serif;
+    font-size: 34px;
     font-weight: bolder;
+    margin-bottom: 0px;
 }
 
 .container-stars {
@@ -156,4 +180,21 @@ h2 {
 .item {
     flex: 1 1 auto;
     margin: 0 6px;
+}
+
+.container-home-text .phome {
+    padding-top: 49px;
+    width: 194px;
+    padding-left: 53px;
+
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px ;
+}
+
+.container-about-p {
+    display: grid;
+    grid-gap: 10px;
+    width: 484px;
+    padding-left: 231px;
+    padding-top: 7px;
 }
