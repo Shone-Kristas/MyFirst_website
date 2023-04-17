@@ -1,10 +1,18 @@
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
 nav {
     border-bottom: 1px solid #828282;
 }
 
 .container{
     max-width: 944px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 .container-nav-list {
@@ -100,34 +108,25 @@ a {
     grid-gap: 167px;
 }
 
-.container-skill-text>p {
+.container-skill-stars .br-la {
     font-family:'Gilroy-Bold', sans-serif;
     font-size: 14px;
     font-weight: bolder;
     color: #828282;
+    height: 42px;
 }
 
 p {
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px ;
-}
-
-.container-skill-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-left: 52px;
-    padding-right: 76px;
-    padding-top: 8px;
+    line-height: 21px;
 }
 
 .container-skill-stars {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 25px;
-    padding-left: 1px;
-    padding-right: 3px;
+    padding-top: 71px;
 }
 
 .section-skill .h2 {
@@ -149,6 +148,7 @@ p {
     margin-top: 25px;
     margin-bottom: 67px;
     border: 1px solid #070707;
+    cursor: pointer;
 }
 
 .container-images {
@@ -156,13 +156,16 @@ p {
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
-    padding-left: 300px;
-    padding-right: 300px;
+    width: 342px;
+    height: 41px;
+    margin: auto;
+    margin-top: 18px;
 }
 
 h1{
     font:47px "Gilroy-Bold", sans-serif;
     font-weight: bolder;
+    line-height: 58px;
 }
 
 h2 {
@@ -175,6 +178,7 @@ h2 {
 .container-stars {
     justify-content: space-between;
     display: flex;
+    margin-top: 33px;
 }
 
 .item {
@@ -185,16 +189,29 @@ h2 {
 .container-home-text .phome {
     padding-top: 49px;
     width: 194px;
-    padding-left: 53px;
-
-    font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 18px ;
+    padding-left: 27px;
 }
 
 .container-about-p {
-    display: grid;
-    grid-gap: 10px;
     width: 484px;
-    padding-left: 231px;
+    margin: auto;
+}
+
+.test123 {
+    width: 166px;
+    height: 206px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.a-p-first {
     padding-top: 7px;
+}
+.a-p-second {
+    padding-top: 27px;
+}
+.a-p-third {
+    padding-top: 27px;
 }
