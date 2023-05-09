@@ -36,7 +36,23 @@
                             RU | ENG
                         </p>
                     </div>
-                    <img class="Button__Menu" src="images/ButtonMenu.svg"/>
+                    <div class="nav__menu__button">
+                        <button class="button__menu" onclick="handleClick()">
+                            <img src="images/ButtonMenu.svg"/>
+                        </button>
+                        <div class="nav-list hidden" id="nav__menu">
+                            <ul class="nav-list-mobile">
+                                <li><a class="mobile-menu__link" href="#home">Home</a></li>
+                                <li><a class="mobile-menu__link" href="#about">About me</a></li>
+                                <li><a class="mobile-menu__link" href="#skill">Skills</a></li>
+                                <li><a class="mobile-menu__link" href="#portfolio">Portfolio</a></li>
+                                <li><a class="mobile-menu__link" href="#contacts">Contacts</a></li>
+                            </ul>
+                            <button class="button__close__btn">
+                                <img src="images/Close.svg"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <img class="Photo__One" src="images/Photo1.png"/>
                 <img class="Photo__Two" src="images/Photo2.png"/>
@@ -149,3 +165,25 @@
     </main>
 </body>
 </html>
+
+<script>
+    function handleClick() {
+        const list = document.getElementById("nav__menu");
+        const btn = document.getElementsByClassName("button__close__btn");
+        if (list && btn) {
+            list.classList.toggle("hidden");
+            btn.classList.toggle("button__close__btn");
+        }
+    }
+
+    function eventHandler(e) {
+        if (e.scrElement && e.scrElement.classList.contains("mobile-menu__link")) {
+            handleClick();
+        }
+    }
+
+    document.addEventListener("click", (e) => {
+        eventHandler(e);
+        document.removeEventListener("click", eventHandler);
+    });
+</script>
