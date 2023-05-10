@@ -36,21 +36,15 @@
                             RU | ENG
                         </p>
                     </div>
-                    <div class="nav__menu__button">
-                        <button class="button__menu" onclick="handleClick()">
-                            <img src="images/ButtonMenu.svg"/>
-                        </button>
-                        <div class="nav-list hidden" id="nav__menu">
-                            <ul class="nav-list-mobile">
-                                <li><a class="mobile-menu__link" href="#home">Home</a></li>
-                                <li><a class="mobile-menu__link" href="#about">About me</a></li>
-                                <li><a class="mobile-menu__link" href="#skill">Skills</a></li>
-                                <li><a class="mobile-menu__link" href="#portfolio">Portfolio</a></li>
-                                <li><a class="mobile-menu__link" href="#contacts">Contacts</a></li>
-                            </ul>
-                            <button class="button__close__btn">
-                                <img src="images/Close.svg"/>
-                            </button>
+                    <div class="mobile-menu">
+                        <button class="mobile-menu__btn" onclick="handleClick()"></button>
+                        <ul class="mobile-menu__list hidden" id="nav-menu">
+                            <li><a class="mobile-menu__link" href="#home">Home</a></li>
+                            <li><a class="mobile-menu__link" href="#about">About me</a></li>
+                            <li><a class="mobile-menu__link" href="#skill">Skills</a></li>
+                            <li><a class="mobile-menu__link" href="#portfolio">Portfolio</a></li>
+                            <li><a class="mobile-menu__link" href="#contacts">Contacts</a></li>
+                        </ul>
                         </div>
                     </div>
                 </div>
@@ -169,10 +163,11 @@
 <script>
     function handleClick() {
         const list = document.getElementById("nav__menu");
-        const btn = document.getElementsByClassName("button__close__btn");
+        const btn = document.getElementsByClassName("mobile-menu__btn")[0];
         if (list && btn) {
+            document.body.classList.toggle("lock");
             list.classList.toggle("hidden");
-            btn.classList.toggle("button__close__btn");
+            btn.classList.toggle("close");
         }
     }
 
